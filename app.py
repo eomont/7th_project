@@ -2,12 +2,14 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
+st.header('Proyecto #7: Despliegue de aplicación en Render') #Encabezado 
+st.write('Conjunto de datos de anuncios de coches') #Mensaje descriptivo
+
+
 car_data = pd.read_csv('vehicles_us.csv') # leer los datos
 hist_button = st.button('Construir histograma') # crear un botón
 scatter_checkbox = st.checkbox("Construir scatter") #Creación del botón para diagrama de dispersión
 
-st.header('Proyecto #7: Despliegue de aplicación en Render')
-st.write('Conjunto de datos de anuncios de coches')
 
 if hist_button: # al hacer clic en el botón
     # escribir un mensaje
